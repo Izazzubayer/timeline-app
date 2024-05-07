@@ -1,0 +1,33 @@
+/* src/components/Timeline.css */
+
+.Timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .DateItemWrapper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .DeadlineList {
+    margin-top: 20px;
+  }
+  
+  /* Styling for the line connecting dates */
+  .DateItemLine {
+    position: relative;
+  }
+  
+  .DateItemLine::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    z-index: -1;
+  }
+  
